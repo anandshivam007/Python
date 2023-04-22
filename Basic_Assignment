@@ -1,0 +1,118 @@
+# Write a Program to take name as input from the user and print hello user name
+name = input("Enter Your Name : ")
+print(f"Hello {name}")
+#write a Program to print left, center and right justificationfor a given text (70 characters max
+columns)
+string = input("Enter Your String to be centre Justified : ")
+s = string.center(70)
+print(s)
+string1 = input("Enter Your String to be left Justified : ")
+l = string1.ljust(70)
+print(l)
+string2 = input("Enter Your String to be left Justified : ")
+r = string2.rjust(70)
+print(r)
+# 1. Input two numbers and work out their sum, average, product, difference, division
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+a = num1+num2
+b = (num1+num2)/2
+c = num1*num2
+d = num1-num2
+e = round((num1/num2),2)
+print(f"sum of the number is {a}")
+print(f"Average of the number is {b}")
+print(f"Product of the number is {c}")
+print(f"Difference of the number is {d}")
+print(f"Division of the number is {e}")
+#2. Write a program to calculate the simple interest
+p = int(input("Enter the principal Amount in Rupees : "))
+r = float(input("Enter the rate of Interest"))
+t = int(input("Enter the duration in years for which interest has to be calculated"))
+si = (p*r*t)/100
+print(si)
+# 3.write a program to exchange the contents of 2 numbers ( swapping)
+a = int(input("Enter the first Number: "))
+b = int(input("Enter the second Number: "))
+temp = a
+a = b
+b = temp
+print(a)
+print(b)
+###4.Write a program to read a "float" representing a number of degrees Fahrenheit,
+##and print as a "float" the equivalent temperature in degrees Celsius. Print your
+##results in a form such as 212.0 degrees Fahrenheit converts to 100.0 degrees
+##Celsius.
+farenheit = float(input("Enter the temperature in Farenheit: "))
+celsius = float(5*(farenheit-32)/9)
+print("Temperature in celsius is",celsius)
+##5 Given as input a floating (real) number of centimeters, print out the equivalent
+##number of feet (integer) and inches (floating, 1 decimal), with the inches given to
+##an accuracy of one decimal place. Assume 2.54 centimeters per inch, and 12
+##inches per foot.
+cm = float(input("Enter the Number in cm"))
+feet = int((cm/30.48))
+inch = round((cm/2.54),1)
+print(feet)
+print(inch)
+#6. write a program to find the biggest of 2 numbers
+num1 = int(input("Enter the First Number : "))
+num2 = int(input("Enter the Second Number: "))
+if num1 > num2 :
+ print(f"{num1} is greater than {num2}")
+elif num2>num1:
+ print(f"{num2} is greater than {num1}")
+#7.Input a number from the keyboard and find out whether it is even or odd number
+num = int(input("Enter the number : "))
+if num%2 == 0:
+ print("It is even Number")
+else:
+ print("It is an odd Number")
+#8.write a program to find the biggest of 3 numbers
+num1 = int(input("Enter the First number: "))
+num2 = int(input("Enter the Second number: "))
+num3 = int(input("Enter the Third number: "))
+if num1 > num2 and num1 > num3:
+ print(f"{num1} is greatest")
+elif num2>num1 and num2 > num3:
+ print(f"{num2} is greatest")
+else :
+ print(f"{num3} is greatest")
+##10.Input student marks in 5 subjects and find out the sum, average and based on
+##the average give them grading as follows:
+##i. Average > 60 I Division
+##ii. Average > 50 II Division
+##iii. Average > 40 III Division
+##iv. Average < 40 Fail
+sub1 = int(input("Enter the marks is Hindi : "))
+sub2 = int(input("Enter the marks is English : "))
+sub3 = int(input("Enter the marks is Science : "))
+sub4 = int(input("Enter the marks is Maths : "))
+sub5 = int(input("Enter the marks is SST : "))
+sum = sub1+sub2+sub3+sub4+sub5
+avg = int(sum/5)
+if avg > 60 :
+ print("You have secured first Division")
+elif avg > 50 and avg <= 60 :
+ print("You have secured second Division")
+elif avg > 40 and avg <= 50 :
+ print("You have secured third Division")
+elif avg < 40 :
+ print("You have Failed")
+##13.In a company worker efficiency is determined on the basis of time required for a
+##worker to complete the job. If the time taken by the worker is 2 – 3 hrs, then
+##the worker is said to be highly efficient (STAR). If the time required by worker is
+##3 – 4 hrs, then the worker is ordered to improve speed (MERITORIUS). If the
+##time taken is between 4 – 5 hrs, the worker is given training to improve speed
+##(ADEQUATE), and if the time taken by the worker is more than 5 hours, then
+##the worker has to leave the company (TRAILER). If the time taken by the
+##worker is input through the keyboard, find the efficiency of the worker.
+time_taken = int(input("Enter the time taken by the worker : "))
+if time_taken > 2 and time_taken <= 3 :
+ print("Worker is highly efficient (STAR)")
+elif time_taken > 3 and time_taken <= 4 :
+ print("Worker should improve his speed (MERITORIUS)")
+elif time_taken > 4 and time_taken <= 5 :
+ print("Worker should leave the company (ADEQUATE)")
+elif time_taken > 5 :
+ print("Worker should leave the company (TRAILER)")
