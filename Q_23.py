@@ -1,6 +1,6 @@
 #Write a program to find out the factorial of a given number
 
-num = int(input("Enter the number for which factorial has to b calculated : "))
+num = int(input("Enter a positive number for which factorial has to be calculated : "))
 
 factorial = 1
 
